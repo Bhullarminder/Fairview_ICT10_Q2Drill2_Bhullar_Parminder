@@ -19,6 +19,5 @@ def add_members(e):
     # Adds the fullname to the set
     Final_result = Result | {fullname}
 
-    display(", ".join(Final_result), target="result") #.join removes the brackets and joins 
-    display("Total members: " + str(len(Final_result)), target="result") # len() counts the members, str() converts the number to text,
-    # and + combines it with "Total members: "
+    display(Final_result, target="result")
+    display("Total members: " + str(len(Final_result)), target="result")
