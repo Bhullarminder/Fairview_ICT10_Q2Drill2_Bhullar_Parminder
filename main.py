@@ -9,6 +9,7 @@ Grade_10 = {'Duskull 016', 'Rayquaza 015', 'Arceus 014'}
 def add_members(e):
     first_name = document.getElementById("firstName").value
     last_name = document.getElementById("lastName").value
+    document.getElementById("result").innerHTML = ""
 
     # Combines the names into one variable
     fullname = first_name + " " + last_name
@@ -23,3 +24,4 @@ def add_members(e):
     display(", ".join(Final_result), target="result")
     # .join() removes the brackets and joins all the members
     display("Total members: " + str(len(Final_result)), target="result")
+    # len counts the total number of names, str converts it into a string and + joins them and displays it with total members: 
