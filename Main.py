@@ -20,4 +20,4 @@ def add_members(e):
     Final_result = Result | {fullname}
 
     display(Final_result, target="result")
-    display(len(Final_result), target="result")
+    display("Total members: " + str(len(Final_result)), target="result")
